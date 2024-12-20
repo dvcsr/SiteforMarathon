@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+        }
+
+        .iframe-container {
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .youtube {
+            width: 100vw;
+            height: 80vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .weather {
+            width: 100vw;
+            height: 40vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-overlay {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            background-color: rgba(0 0 0 / 0.5);
+            top: 0;
+            left: 0;
+            color: white;
+        }
+        .votitle {
+            top: 150px;
+            text-align: center;
+            color: white;
+            font-size: 73px;
+        }
+        button {
+            padding: 5px 10px;
+            border: 4px solid white;
+            color: white;
+            background-color: rgba(0 0 0 / 0);
+            font-size: 24px;
+        }
+
+        .distance-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .dctitle {
+            font-size: 32px;
+        }
+
+        .d1, .d3, .d5 {
+            float: left;
+        }
+
+        .d2, .d4 {
+            float: right;
+        }
+
+        .distance {
+            display: table;
+            clear: both;
+        }
+
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .distance-image {
+            filter: saturate(100%);
+        }
+
+        .distance-image:hover {
+            filter: saturate(200%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe class="youtube" src="https://www.youtube.com/embed/yLGfPNhtS2U?si=56iFMd5H71CL8-3r?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-overlay">
+        <h1 class="vo votitle">Motivated?</h1>
+        <button class="vo vobutton">Join us!</button>
+    </div>
+    </div>
+    <div class='iframe-container'>
+        <iframe class="weather" src="https://www.meteoblue.com/en/weather/widget/daily/london_united-kingdom_2643743?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/london_united-kingdom_2643743?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+    </div>
+<div class='distance-container'>
+    <h2 class="dctitle">Running Distances</h2>
+    <ul>
+        <li class="distance dis1">
+            <img class="distance-image d1" src="https://images.stockcake.com/public/c/0/a/c0a764bc-831f-4fec-bf8a-a0ddcceab2d0_medium/marathon-runners-racing-stockcake.jpg">
+            <h2> 1km Run</h2>
+            <p>
+                Good for starter, newbie anyone including your grandparents. 1km is a baby step to love running.
+            </p>
+        </li>
+        <li class="distance dis2">
+            <img class="distance-image d2" src="https://images.stockcake.com/public/c/0/a/c0a764bc-831f-4fec-bf8a-a0ddcceab2d0_medium/marathon-runners-racing-stockcake.jpg">
+            <h2>5km Run</h2>
+            <p>
+                With a distance of 5km, this run is a great challenge for beginner runners or those who want to improve their fitness. Whether you're looking to increase your speed or endurance, this distance will test your limits and help you reach your goals.
+            </p>
+        </li>
+        <li class="distance dis3">
+            <img class="distance-image d3" src="https://images.stockcake.com/public/c/0/a/c0a764bc-831f-4fec-bf8a-a0ddcceab2d0_medium/marathon-runners-racing-stockcake.jpg">
+            <h2> 10km Run</h2>
+            <p>
+                The 10km run is a great intermediate distance that offers a challenge to runners who have already tackled shorter races. With a mix of speed and endurance, this distance requires a bit more training and dedication, but the sense of accomplishment you'll feel at the finish line will be well worth it.
+            </p>
+        </li>
+        <li class="distance dis4">
+            <img class="distance-image d4" src="https://images.stockcake.com/public/c/0/a/c0a764bc-831f-4fec-bf8a-a0ddcceab2d0_medium/marathon-runners-racing-stockcake.jpg">
+            <h2> 21km Run</h2>
+            <p>
+                Half Marathon, the image is any image related to a half marathon, description: The half marathon is a major milestone for runners and requires dedicated training to complete. At a distance of 21km, this run will push you to your limits both physically and mentally, but the feeling of crossing the finish line is an experience like no other.
+            </p>
+        </li>
+        <li class="distance dis5">
+            <img class="distance-image d5" src="https://images.stockcake.com/public/c/0/a/c0a764bc-831f-4fec-bf8a-a0ddcceab2d0_medium/marathon-runners-racing-stockcake.jpg">
+            <h2> 42km Run</h2>
+            <p>
+                Full Marathon, the image is any image related to a full marathon, description: The full marathon is the ultimate challenge for runners and requires months of intense training to complete. With a distance of 42km, this run is not for the faint of heart, but for those who are willing to put in the time and effort, the feeling of crossing the finish line is a truly unforgettable experience.
+            </p>
+        </li>
+    </ul>
+</div>
+<div class='map-container'>
+    <h2>See you at Big Ben!</h2>
+    <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.680567815133!2d-0.12949631038587972!3d51.50072909913063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2sid!4v1734708665518!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>
